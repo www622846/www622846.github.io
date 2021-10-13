@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 #top{
     position: sticky;
 }
@@ -6,18 +8,6 @@
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid gray;
-}
-#sidebar {
-    position: absolute;
-    display: inline-block;
-    order: 0;
-    width: 50px;
-}
-#sidebar p{
-    margin: 0px;
-    width: 45px;
-    margin:10px 3px 10px 3px;
-    box-sizing: border-box;
-    border-bottom: 6px solid deepskyblue;
-    border-radius: 35rem;
+    font-family:'Black Han Sans', cursive;
+    font-size: 5rem;
 }
