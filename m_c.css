@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-
 #top{
     position: sticky;
 }
@@ -11,26 +10,77 @@
     font-family:'Black Han Sans', cursive;
     font-size: 5rem;
 }
-#content{
-    text-align: center;
+#contents{
+    justify-content: center;
+    display: flex;
 }
 #table_of_content{
+    padding-left: 4.5rem;
     border-radius: 1rem;
-    width: 13rem;
+    width: 23rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     height: auto;
     border: 1px solid black;
 }
 .list{
+    font-size: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-h2{
+li{
     font-size: 2rem;
+}
+h2{
+    font-size: 4rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
     border-bottom: 1px solid gray;   
     border-top: 1px solid gray;   
+}
+h3{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    font-size: 2.5rem;
+}
+p{
+    padding-left: 1.8rem;
+}
+#T{font-size: 1.5rem;
+}
+#T{
+    font-size: 1.2rem; 
+}
+#highlight{
+    background-color: yellow;
+}
+#way{
+    font-size: 1.2rem;
+}
+#type {
+    color: deepskyblue;
+}
+#vol{
+    color: greenyellow;
+}
+#programming{
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    margin: 20px 10px;
+}
+th{
+    border: 1px solid black;
+}td{
+    border: 1px solid black;
+    text-align: center;
 }
