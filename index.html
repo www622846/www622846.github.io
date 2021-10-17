@@ -34,7 +34,157 @@
         <div>
             
             <h2>1. 9장 포인터</h2>
-        
+            <p id="T">포인터는 <span id="highlight">메모리의 주소</span>를 가지고 있는 변수</p>
+            <p id="way">표현방법</p>
+            <p id="programming"><span id="type">int</span> *p; <span id="vol">//포인터 p선언 (간접 참조 연산)</span></p>
+            <p id="programming">p = &amp;number; <span id="vol">//변수 number의 주소가 포인터 p로 대입</span></p>
+            <br>
+            <br>
+            <table>
+                <th>포인터 타입</th>
+                <th>++연산후 증가하는 값</th>
+                
+                <tr>
+                    <td>char</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>short</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>double</td>
+                    <td>8</td>
+                </tr>
+            
+            </table>
+            <br>
+            <br>
+            <table>
+                <th>표시</th>
+                <th>내용</th>
+                
+                <tr>
+                    <td>*p++</td>
+                    <td>p를 가르키는 내용을 가져오고 p를 증가.</td>
+                </tr>
+                <tr>
+                    <td>(*p)++</td>
+                    <td>p가 가르는 위치 값 증가.</td>
+                </tr>
+                <tr>
+                    <td>v = * ++p</td>
+                    <td>p를 증가시킨 후 p가 가르키는 값을 v에 대입.</td>
+                </tr>
+                <tr>
+                    <td>v = ++*p</td>
+                    <td>p를 가르키는 값을 가져오고 그 값을 증가 시켜 v에 대입.</td>
+                </tr>
+            
+            </table>
+            <br><br><br>
+            <p id ="T">값에 의한 호출</p>
+            <p id ="dis">함수가 호출될 때 복사본이 함수로 전달되면 값에 의한 호출이다. 함수 안에서 매개 변수를 변경하여도 원본에는 영향을 주지 않는다.</p>
+            <br>
+            <p id ="T">참조에 의한 호출</p>
+            <p id ="dis">만약 함수가 호출될 때 원본을 함수로 전달하는 방법이다. 함수 안에서 매개 변수를 변경하면 원본 변수가 변경된다.</p>
+            
+            <h2>2. 10장 문자열</h2>
+            <h3>문자 입출력</h3>
+            <table>
+                <th>함수</th>
+                <th>설명</th>
+                <tr>
+                    <td>getchar()</td>
+                    <td>하나의 문자를 받아서 반환한다. 버퍼를 사용한다.</td>
+                </tr>
+                <tr>
+                    <td>putchar()</td>
+                    <td>하나의 문자를 받아서 출력한다.</td>
+                </tr>
+                <tr>
+                    <td>getch()</td>
+                    <td>하나의 문자를 받아서 반환한다. 버퍼를 사용하지 않는다.</td>
+                </tr>
+                <tr>
+                    <td>putch()</td>
+                    <td>하나의 문자를 받아서 출력한다.</td>
+                </tr>
+            </table>
+            <br>
+            
+            <h3>문자열 입출력</h3>
+            <table>
+                <th>입출력 함수</th>
+                <th>설명</th>
+                <tr>
+                    <td>scanf("%s", s)</td>
+                    <td>문자열을 읽어서 배열 s[]에 저장.</td>
+                </tr>
+                <tr>
+                    <td>printf("%s", s)</td>
+                    <td>배열 s[]에 저장되어 있는 문자열을 출력.</td>
+                </tr>
+                <tr>
+                    <td>get_s(char s[], int length)</td>
+                    <td>한 줄의 문자열을 읽어서 배열 s[]에 저장.</td>
+                </tr>
+                <tr>
+                    <td>puts(char s[])</td>
+                    <td>배열 s[]에 저장되어 있는 한 줄의 문자열을 출력.</td>
+                </tr>
+            </table>
+            <br>
+            
+            <h3>문자열 입출력</h3>
+            <table>
+                <th>입출력 함수</th>
+                <th>설명</th>
+                <tr>
+                    <td>strlen(s)</td>
+                    <td>문자열 s의 길이를 구한다.</td>
+                </tr>
+                <tr>
+                    <td>strcpy(s1, s2)</td>
+                    <td>s2를 s1에 복사한다.</td>
+                </tr>
+                <tr>
+                    <td>strcat(s1, s2)</td>
+                    <td>s2를 s1의 끝에 붙여넣는다.</td>
+                </tr>
+                <tr>
+                    <td>strcmp(s1, s2)</td>
+                    <td>s1과 s2를 비교한다.</td>
+                </tr>
+                <tr>
+                    <td>strcpy(s1, s2, n)</td>
+                    <td>s2의 최대 n개의 문자를 s1에 복사한다.</td>
+                </tr>
+                <tr>
+                    <td>strcat(s1, s2, n)</td>
+                    <td>s2의 최대 n개의 문자를 s1의 끝에 붙여넣는다.</td>
+                </tr>
+                <tr>
+                    <td>strcmp(s1, s2, n)</td>
+                    <td>최대 n개의 문자까지 s1과 s2를 비교한다.</td>
+                </tr>
+                <tr>
+                    <td>strchr(s, c)</td>
+                    <td>문자열 s안에서 문자 c를 찾는다.</td>
+                </tr>
+                <tr>
+                    <td>strstr(s1, s2)</td>
+                    <td>문자열 s1에서 문자열 s2를 찾는다.</td>
+                </tr>
+            </table>
         </div>
         <script src="m_s.js"></script>
     </body>
